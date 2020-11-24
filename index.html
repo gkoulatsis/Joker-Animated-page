@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Joker | Landing page UI Design</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><img src="logo.png"></a>
+    <div class="toggle"><img src="toggle.png"></div>
+  </header>
+  <div class="banner">
+  <div class="content">
+    <h2>Put on a <span>Happy</span> face</h2>
+    <p>Forever alone in a crowd, failed comedian Arthur Fleck seeks 
+      connection as he walks the streets of Gotham City. Arthur wears two masks -
+      the one he paints for his day job as a clown, and the guise he projects in a futile
+      attempt to feel like he's part of the world around him. Isolated, bullied and disregarded
+      by society, Fleck begins a slow descent into madness as he transforms into the criminal mastermind
+      known as the Joker.</p>
+    <a href="#" class="play" onclick="toggle();"><img src="play.png">Watch Trailer</a>
+    <div class="slide"></div>
+    <ul class="sci">
+      <li><a href="#"><img src="facebook.png"></a></li>
+      <li><a href="#"><img src="twitter.png"></a></li>
+      <li><a href="#"><img src="instagram.png"></a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="trailer">
+    <video src="/1080p.mp4.mp4" controls="true"></video>
+    <img src="close.png" class="close" onclick="toggle();">
+  </div>
+  <script type="text/javascript">
+    function toggle() {
+      var trailer = document.querySelector('.trailer');
+      trailer.classList.toggle('active')
+      console.log(trailer);
+    }
+  </script>
+</body>
+</html>
